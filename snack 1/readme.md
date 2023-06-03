@@ -3,3 +3,7 @@ Ci ha lasciato il nome del tavolo ("Tavolo Vip") e la lista degli invitati in or
 ['Brad Pitt', 'Johnny Depp', 'Lady Gaga', 'Cristiano Ronaldo', 'Georgina Rodriguez', 'Chiara Ferragni', 'Fedez', 'George Clooney', 'Amal Clooney', 'Maneskin'].
 Ma la tipografia per stampare il tutto vuole che le mandiamo una lista di ospiti in cui ogni ospite sia un oggetto javascript che ha come attributi: nome del tavolo, nome dell'ospite e posto occupato.
 Generiamo e stampiamo in console la lista per i segnaposto.
+
+SOLUZIONE:
+1- Creo un array con degli oggetti che hanno come attributi i nomi degli ospiti, il numero del tavolo, il numero del posto;
+2- Creo un ciclo forEach che interessa l'array in questione e stampo nella console per ogni ospite, concatenando i valori, i segnaposto.
