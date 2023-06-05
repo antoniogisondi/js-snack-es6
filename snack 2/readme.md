@@ -14,3 +14,9 @@ Id  Name                Grades
 196 Luigi Grimaldello 	    68
 102 Piero della Francesca   50
 120 Francesca da Polenta    84
+
+SOLUZIONE :
+1- Creo una array con degli oggetti che hanno come chiavi: name, id , grades;
+2- Utilizzo la funzione map per cambiare i nomi da minuscoli a maiuscoli;
+3- Utilizzo la funzione filter per stampare in console gli oggetti che hanno come grades maggiore di 70;
+4- Utilizzo la funzione filter per stampare in console gli oggetti che hanno come grades maggiore di 70 e l'Id maggiore di 120;
