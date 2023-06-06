@@ -1,53 +1,63 @@
 "use strict"
 const football_team = [
     {
-        team: 'Chelsea',
-        punti: 0,
+        nome: 'Chelsea', 
+        punti_fatti: 0, 
         falli_subiti: 0
-    },
+    }, 
     {
-        team: 'Manchester City',
-        punti: 0,
+        nome: 'Manchester City', 
+        punti_fatti: 0, 
         falli_subiti: 0
-    },
+    }, 
     {
-        team: 'Liverpool',
-        punti: 0,
+        nome: 'Liverpool', 
+        punti_fatti: 0, 
         falli_subiti: 0
-    },
+    }, 
     {
-        team: 'Tottenham',
-        punti: 0,
+        nome: 'Tottenham', 
+        punti_fatti: 0, 
         falli_subiti: 0
-    },
+    }, 
     {
-        team: 'Arsenal',
-        punti: 0,
+        nome: 'Arsenal', 
+        punti_fatti: 0, 
         falli_subiti: 0
-    },
+    }, 
     {
-        team: 'West Ham',
-        punti: 0,
+        nome: 'West Ham', 
+        punti_fatti: 0, 
         falli_subiti: 0
-    },
+    },   
     {
-        team: 'Manchester United',
-        punti: 0,
+        nome: 'Manchester United', 
+        punti_fatti: 0, 
         falli_subiti: 0
-    },
+    }, 
     {
-        team: 'Fulham',
-        punti: 0,
+        nome: 'Fulham', 
+        punti_fatti: 0, 
         falli_subiti: 0
     }
 ]
 
-let obj = football_team.map((team) => {
-    team.punti = Math.floor(Math.random()*(100 - 3 + 1) + 3)
-    team.falli_subiti = Math.floor(Math.random()*(30 - 1 + 1) + 1)
-    console.log(team.falli_subiti)
+const new_list_team = []
+
+football_team.forEach((footballTeam) => {
+
+    footballTeam.punti_fatti = Math.floor(Math.random()*100)
+    footballTeam.falli_subiti = Math.floor(Math.random()*50)
+
+    let new_list = {
+        nome: footballTeam.nome,
+        falli_subiti: footballTeam.falli_subiti
+    }
+
+    new_list_team.push(new_list)
 })
 
-
+console.log(football_team)
+console.log(new_list_team)
 
 
